@@ -63,5 +63,3 @@
 \contentsline {paragraph}{Recall}{92}{section*.26}%
 \contentsline {subsubsection}{Relationship with Poisson distribution and process}{93}{section*.27}%
 \contentsline {section}{\numberline {4.3}Birth-Death Process and M/M/s Systems}{94}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Appendix}{99}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Handout 26-3-24}{99}{section.5.1}%
