@@ -1,0 +1,68 @@
+\input{mathbookset}
+\usepackage{ulem}
+\usepackage{pdfpages}
+\usepackage{soul}
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{zhlipsum}
+\usepackage{bbm}
+\usepackage{diagbox}
+\usepackage{enumerate}
+\usepackage{cleveref}
+\usepackage{annotate-equations}
+\usepackage{zhlipsum}
+\definecolor{SwishLineColour}{HTML}{88AC0B}
+\definecolor{MarkerColour}{HTML}{B6073F}
+\usetikzlibrary{positioning}
+%\newenvironment{procedure}
+%{\begin{shaded}\par\noindent\textbf{procedure}\quad\par\noindent}{\end{shaded}\par}
+
+\declaretheoremstyle[name=Procedure,]{prosty}
+\declaretheorem[style=prosty,numberwithin=section]{procedure}
+\tcolorboxenvironment{procedure}{colback=LightIndigo,breakable,before upper app={\setlength{\parindent}{2em}}}
+
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+\linespread{1.5}
+\title{ \normalsize \textsc{Review of Operation Research}
+	\\ [2.0cm]
+	\HRule{1.5pt} \\
+	\LARGE \textbf{\uppercase{运筹学复习}
+		\HRule{2.0pt} \\ [0.6cm] \LARGE{Jinhua Wu} \vspace*{10\baselineskip}}
+}
+\date{}
+\author{}
+
+\begin{document}
+	\maketitle
+	\tableofcontents 
+	\newpage
+	\setcounter{page}{1}
+	\chapter{线性规划 Linear Programming}
+	LP 的标准形式
+	\begin{align*}
+		\max &\quad f = \sum\limits_{j=1}^n c_jx_j \\
+            & \left\lbrace\begin{array}{ll}
+                \sum\limits_{j=1}^n a_{ij}x_j = b_i, & 1\leqslant i\leqslant m  \\
+                x_j \geqslant 0, & 1\leqslant j\leqslant n
+            \end{array} \right.
+	\end{align*}
+	
+	矩阵形式
+ \begin{align*}
+		\max &\quad \eqnmarkbox[blue]{f}{f} = C^T x \\
+            & \left\lbrace\begin{array}{rl}
+                \eqnmarkbox[green]{A}{A}x &= b  \\
+                x &\geqslant 0
+            \end{array} \right.
+	\end{align*}
+ \annotate[yshift = 0.5em]{above, left}{f}{$f$被称为目标函数(objective function)}
+\annotate[yshift = -1.5em]{below, left}{A}{$A$被称为优化变量(optimisation variable)，且$A$满秩}
+	
+	
+\end{document}

@@ -1,0 +1,67 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Optimisation Theory}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Linear Programming}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Simplex Method}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Definition}{2}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Prop 1.1 }{2}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Th 1.2}{3}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Th 1.3}{3}{subsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.1.6}Cor 1.4}{4}{subsection.1.1.6}%
+\contentsline {subsection}{\numberline {1.1.7}Simplex Method（单纯形法）}{4}{subsection.1.1.7}%
+\contentsline {subsection}{\numberline {1.1.8}Procedure of simplex method}{7}{subsection.1.1.8}%
+\contentsline {subsection}{\numberline {1.1.9}Duality（对偶）in linear programming}{7}{subsection.1.1.9}%
+\contentsline {subsection}{\numberline {1.1.10}Dual simplex method}{9}{subsection.1.1.10}%
+\contentsline {section}{\numberline {1.2}Non-linear programming}{15}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Duality and the Lagrangian}{20}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}KT conditions}{21}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Algorithm Methods}{23}{subsection.1.2.3}%
+\contentsline {subsubsection}{Algorithm Method with linear constraints}{29}{section*.2}%
+\contentsline {section}{\numberline {1.3}Integer programming}{31}{section.1.3}%
+\contentsline {subsubsection}{A. Branch and bound method}{31}{section*.3}%
+\contentsline {subsubsection}{B. Mixed integer programming problem}{32}{section*.6}%
+\contentsline {subsubsection}{C. BIP problem}{32}{section*.7}%
+\contentsline {subsection}{\numberline {1.3.1}B. Cutting plane method}{33}{subsection.1.3.1}%
+\contentsline {section}{\numberline {1.4}Dynamic Programming}{36}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}A. Knapsack Problem}{36}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}B. 0-1 knapsack Problem}{39}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}C. Resource allocation problem}{41}{subsection.1.4.3}%
+\contentsline {chapter}{\numberline {2}Game Theory}{45}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{45}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Two-player zero-sum and constant-sum games}{46}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Two-player non-constant-sum games}{54}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Cooperative Games}{58}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Games with t players}{60}{section.2.4}%
+\contentsline {paragraph}{Conclusion}{64}{section*.8}%
+\contentsline {chapter}{\numberline {3}Graph Theory and Networks}{67}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Terminology}{67}{section.3.1}%
+\contentsline {paragraph}{Important examples:}{67}{section*.9}%
+\contentsline {section}{\numberline {3.2}Shortest path problem}{70}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Problem 3.1 Shortest path problem}{70}{subsection.3.2.1}%
+\contentsline {subsubsection}{A. Dijkstra's Algorithm}{70}{section*.10}%
+\contentsline {paragraph}{1.}{70}{section*.11}%
+\contentsline {paragraph}{2}{71}{section*.12}%
+\contentsline {paragraph}{3}{71}{section*.13}%
+\contentsline {paragraph}{Base cases:}{72}{section*.14}%
+\contentsline {paragraph}{Induction Step}{72}{section*.15}%
+\contentsline {subsubsection}{Bellman-Fold Algorithm}{73}{section*.16}%
+\contentsline {paragraph}{1}{73}{section*.17}%
+\contentsline {paragraph}{2}{73}{section*.18}%
+\contentsline {paragraph}{3}{73}{section*.19}%
+\contentsline {paragraph}{4}{73}{section*.20}%
+\contentsline {section}{\numberline {3.3}Maximum Flow Problem}{76}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Problem 3.5}{77}{subsection.3.3.1}%
+\contentsline {subsubsection}{Folk-Fulkerson Algorithm}{78}{section*.21}%
+\contentsline {section}{\numberline {3.4}Minimum Spanning Tree Problem}{82}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Problem 3.9 (Minimum Spanning Tree Problem)}{83}{subsection.3.4.1}%
+\contentsline {paragraph}{Kruskal's Algorithm}{83}{section*.22}%
+\contentsline {chapter}{\numberline {4}Queueing Theory}{87}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Queueing system}{87}{section.4.1}%
+\contentsline {paragraph}{Kendall-Lee notation}{87}{section*.23}%
+\contentsline {paragraph}{Notable cases:}{87}{section*.24}%
+\contentsline {paragraph}{Note also}{88}{section*.25}%
+\contentsline {section}{\numberline {4.2}The exponential distribution}{91}{section.4.2}%
+\contentsline {paragraph}{Recall}{92}{section*.26}%
+\contentsline {subsubsection}{Relationship with Poisson distribution and process}{93}{section*.27}%
+\contentsline {section}{\numberline {4.3}Birth-Death Process and M/M/s Systems}{94}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Appendix}{99}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Handout 26-3-24}{99}{section.5.1}%
