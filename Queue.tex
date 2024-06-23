@@ -398,3 +398,62 @@ Similarly, let $W_q$ be a queueing time RV. If $C$ finds no customers already in
 
 And $\mathbb{E} W_q = \mathbb{E} W - \frac{1}{\mu} = \frac{\lambda}{\mu(\mu - \lambda)}$.
 
+We see that $W_q$ does not have an exponential distribution. But the conditional distribution 
+\begin{align*}
+    \mathbb{P}(W_q>t\mid W_q>0) = \frac{\mathbb{P}(W_q>t)}{\mathbb{P}(W_q>0)} = e^{-\mu(1-\rho)t},\quad t\geqslant 0
+\end{align*}
+is exponential with parameter $\mu(1-\rho)$.
+
+Next, consider an M/M/s system $(s\geqslant 2)$. We can obtain (still $\lambda,\mu$ constants, and $\rho = \frac{\lambda}{s\mu}$)
+\begin{align}
+    r_k = \left\lbrace\begin{array}{ll}
+        \frac{1}{k!}\left(\frac{\lambda}{\mu}\right)\eqnmarkbox[blue]{1}{^k},&\quad  1\leqslant k\leqslant s \\
+        \frac{1}{s!}\left(\frac{\lambda}{\mu}\right)^s\rho^{k-s} = \frac{1}{s!s^{k-s}}\left(\frac{\lambda}{\mu}\right)^k& \quad k\geqslant s
+    \end{array} \right.\label{4.11}
+\end{align}
+
+If $\rho = \frac{\lambda}{s\mu} <1$, then \ref{4.9}, \ref{4.11}$\Rightarrow$
+\begin{align*}
+    p_0 &= \left(\sum\limits_{k=0}^{\infty} r_k\right)^{-1} = \left(\sum\limits_{k=0}^{n-1} \frac{1}{k!}\left(\frac{\lambda}{\mu}\right)^k + \sum\limits_{k=s}^{\infty} \frac{1}{s!} \left(\frac{\lambda}{\mu}\right)^s \frac{1}{1-\rho} \right)^{-1} 
+\end{align*}
+
+Also, $p_k = r_k p_0$ for $k\geqslant 1$, where $r_k$ is as in \ref{4.11}, \ref{4.10}$\Rightarrow$
+\begin{align*}
+    \bar{L}_q = \frac{p_0 \rho}{s!(1-\rho)}\left(\frac{\lambda}{\mu}\right)^s
+\end{align*}
+
+and Th 4.1 (Little's Law), \ref{4.4}$\Rightarrow$
+\begin{align*}
+    \overline{W}_q = \frac{\overline{L}_q}{\lambda},\quad \overline{W} = \overline{W}_q + \frac{1}{\mu},\quad \overline{L} = \lambda \overline{W} = \lambda \overline{W} + \frac{\lambda}{\mu} = \overline{L}_q + \frac{\lambda}{\mu}
+\end{align*}
+
+We can also obtain:
+\begin{align*}
+    \mathbb{P}(W>t) &= e^{-\mu t} \left( 1 + \frac{p_0}{s!(1-\rho)} \left(\frac{\lambda}{\mu}\right)^s \dfrac{1 - e^{-\mu t(s - 1 - \frac{\lambda}{\mu})}}{ s - 1 - \frac{\lambda}{\mu}}\right) \\
+    \mathbb{P}(W_q > t) &= (1-\mathbb{P}(W_q = 0))e^{-s\mu(1-\rho)t},
+\end{align*}
+where $\mathbb{P}(W_q = 0) = \sum\limits_{k=0}^{s-1} p_k$.
+
+\setcounter{example}{2}
+\begin{example}
+    Suppose in a M/M/s system, a time unit is one hour. On average, a customer arrives every 30 minutes, and is served every 20 minutes. Then $\lambda = 2$ customers/hour, and $\mu = 3$ customers/hour. Since $\rho = \frac{2}{3s}<1$, the system is in steady state $\forall s\geqslant 1$. We have the following various values for $s = 1, 2$.
+\end{example}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+         & $s=1$ & $s=2$ \\
+         \hline
+        $\rho$ & $\frac{2}{3}$ & $\frac{1}{3}$ \\
+        $p_0$ &  $\frac{1}{3}$ & $\frac{1}{2}$ \\
+        $p_1$ &  $\frac{2}{9}$ & $\frac{1}{3}$ \\
+        $p_k$, $k\geqslant 2$ & $\frac{1}{3}\left(\frac{2}{3}\right)^k$ & $\left(\frac{1}{3}\right)^k$\\
+        $\overline{L}_q$ & $\frac{4}{3}$ & $\frac{1}{12}$\\
+        $\overline{L}$ & $2$ & $\frac{3}{4}$ \\
+        $\overline{W}_q$ & $\frac{2}{3}$ hour & $\frac{1}{24}$ hour\\
+        $\overline{W}$ & $1$ hour & $\frac{3}{8}$ hour \\
+         \hline
+    \end{tabular}
+\end{table}
+
